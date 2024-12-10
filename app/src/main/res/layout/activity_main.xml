@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/material_dynamic_tertiary60"
+    tools:context=".MainActivity">
+
+    <!-- Chaîne horizontale avec des espaces égaux entre les boutons -->
+    <Button
+        android:id="@+id/buttonF"
+        android:layout_width="0dp"
+        android:layout_height="324dp"
+        android:backgroundTint="#FFFFFF"
+        android:text="F"
+        android:textColor="@color/black"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/buttonC"
+        app:layout_constraintHorizontal_chainStyle="spread" />
+
+    <Button
+        android:id="@+id/buttonC"
+        android:layout_width="0dp"
+        android:layout_height="324dp"
+        android:backgroundTint="#FFFFFF"
+        android:text="C"
+        android:textColor="@color/black"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/buttonF"
+        app:layout_constraintEnd_toStartOf="@id/buttonB" />
+
+    <Button
+        android:id="@+id/buttonB"
+        android:layout_width="90dp"
+        android:layout_height="324dp"
+        android:backgroundTint="#FFFFFF"
+        android:text="B"
+        android:textColor="@color/black"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/buttonC"
+        app:layout_constraintEnd_toStartOf="@id/buttonA" />
+
+    <Button
+        android:id="@+id/buttonA"
+        android:layout_width="0dp"
+        android:layout_height="324dp"
+        android:backgroundTint="#FFFFFF"
+        android:text="A"
+        android:textColor="@color/black"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/buttonB"
+        app:layout_constraintEnd_toStartOf="@id/buttonD" />
+
+    <Button
+        android:id="@+id/buttonD"
+        android:layout_width="0dp"
+        android:layout_height="324dp"
+        android:backgroundTint="#FFFFFF"
+        android:text="D"
+        android:textColor="@color/black"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/buttonA"
+        app:layout_constraintEnd_toStartOf="@id/buttonG" />
+
+    <Button
+        android:id="@+id/buttonG"
+        android:layout_width="0dp"
+        android:layout_height="324dp"
+        android:backgroundTint="#FFFFFF"
+        android:text="G"
+        android:textColor="@color/black"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/buttonD"
+        app:layout_constraintEnd_toStartOf="@id/buttonE" />
+
+    <Button
+        android:id="@+id/buttonE"
+        android:layout_width="0dp"
+        android:layout_height="324dp"
+        android:backgroundTint="#FFFFFF"
+        android:text="E"
+        android:textColor="@color/black"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/buttonG"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
